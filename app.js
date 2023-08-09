@@ -34,12 +34,14 @@ const shop = require("./controller/shop");
 const product = require("./controller/product");
 const order = require("./controller/order");
 const event = require("./controller/event");
+const coupon = require("./controller/couponCode");
 
 app.use("/api/v1/user", user);
 app.use("/api/v1/shop", shop);
 app.use("/api/v1/product", product);
 app.use("/api/v1/order", order);
 app.use("/api/v1/event", event);
+app.use("/api/v1/coupon", coupon);
 
 // it's for ErrorHandling
 app.use(ErrorHandler);
